@@ -1,7 +1,7 @@
 namespace Tennis
 {
     /// <summary>
-    /// Getting started
+    /// Getting started again
     /// </summary>
     class TennisGame1 : ITennisGame
     {
