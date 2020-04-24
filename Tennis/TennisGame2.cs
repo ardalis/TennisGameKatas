@@ -4,7 +4,8 @@ namespace Tennis
     {
         Love,
         Fifteen,
-        Thirty
+        Thirty,
+        Forty
     }
     public class TennisGame2 : ITennisGame
     {
@@ -35,12 +36,7 @@ namespace Tennis
 
             if (p1point > 0 && p2point == 0)
             {
-                if (p1point == 1)
-                    p1res = "Fifteen";
-                if (p1point == 2)
-                    p1res = "Thirty";
-                if (p1point == 3)
-                    p1res = "Forty";
+                p1res = ((ScoreLabel)p1point).ToString();
 
                 p2res = "Love";
                 score = p1res + "-" + p2res;
